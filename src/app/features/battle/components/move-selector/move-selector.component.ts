@@ -4,8 +4,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'pbs-move-selector',
   imports: [],
   templateUrl: './move-selector.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MoveSelectorComponent {
-
-}
+export class MoveSelectorComponent {}

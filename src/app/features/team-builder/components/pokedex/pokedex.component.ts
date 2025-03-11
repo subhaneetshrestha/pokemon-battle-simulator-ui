@@ -4,8 +4,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'pbs-pokedex',
   imports: [],
   templateUrl: './pokedex.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PokedexComponent {
-
-}
+export class PokedexComponent {}

@@ -4,8 +4,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'pbs-your-team',
   imports: [],
   templateUrl: './your-team.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class YourTeamComponent {
-
-}
+export class YourTeamComponent {}

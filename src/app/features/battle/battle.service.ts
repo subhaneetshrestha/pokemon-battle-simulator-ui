@@ -18,7 +18,7 @@ export class BattleService {
               {
                 id: 4,
                 name: 'Psychic',
-                damageType: 2
+                damageType: 2,
               },
             ],
             name: 'Psyshock',

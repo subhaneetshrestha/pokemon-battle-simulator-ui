@@ -4,8 +4,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'pbs-turn-menu',
   imports: [],
   templateUrl: './turn-menu.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TurnMenuComponent {
-
-}
+export class TurnMenuComponent {}

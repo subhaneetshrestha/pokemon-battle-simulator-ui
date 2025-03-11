@@ -4,8 +4,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'pbs-quick-draws',
   imports: [],
   templateUrl: './quick-draws.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class QuickDrawsComponent {
-
-}
+export class QuickDrawsComponent {}
