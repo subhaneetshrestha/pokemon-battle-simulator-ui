@@ -4,9 +4,6 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'pbs-root',
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: `<router-outlet />`,
 })
-export class AppComponent {
-  title = 'pokemon-battle-simulator-ui';
-}
+export class AppComponent {}

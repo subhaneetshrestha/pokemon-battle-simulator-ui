@@ -1,0 +1,29 @@
+<div class="border rounded-md p-4 grid gap-4">
+  <div class="flex justify-between font-bold text-xl">
+    <div class="flex gap-4">
+      <h2>{{ pokemonName() }}</h2>
+      <div>{{ pokemonGender() }}</div>
+    </div>
+
+    <div>
+      <h2>Lv {{ level() }}</h2>
+    </div>
+  </div>
+
+  <div class="flex gap-4 justify-between items-center">
+    <div class="font-bold text-xl">HP</div>
+    <div class="flex-1">
+      <div class="w-full bg-gray-200 rounded-full h-6 overflow-hidden">
+        <div
+          class="bg-red-500 h-6 transition-all duration-200 ease-in-out"
+          [style.width.%]="currentHP()"
+        ></div>
+      </div>
+      <!-- <p-progressBar
+        [value]="percentHP()"
+        [showValue]="false"
+        [styleClass]="percentHP() | hpBarColor"
+      /> -->
+    </div>
+  </div>
+</div>
