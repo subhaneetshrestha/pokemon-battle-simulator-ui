@@ -13,10 +13,15 @@
   <div class="flex gap-4 justify-between items-center">
     <div class="font-bold text-xl">HP</div>
     <div class="flex-1">
-      <div class="w-full bg-gray-200 rounded-full h-6 overflow-hidden">
+      <div class="w-full bg-gray-300 rounded-full h-6 overflow-hidden">
         <div
-          class="bg-red-500 h-6 transition-all duration-200 ease-in-out"
-          [style.width.%]="currentHP()"
+          class="h-6 transition-all duration-200 ease-in-out"
+          [ngClass]="{
+            'bg-red-500': percentHP() <= 30,
+            'bg-orange-500': percentHP() > 30 && percentHP() < 60,
+            'bg-green-500': percentHP() >= 60,
+          }"
+          [style.width.%]="percentHP()"
         ></div>
       </div>
       <!-- <p-progressBar

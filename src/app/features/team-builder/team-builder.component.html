@@ -1,1 +1,33 @@
-<p>team-builder works!</p>
+<main class="p-12">
+  <section class="flex gap-4">
+    <div class="grid grid-cols-3 gap-4 w-2/5 p-4 border rounded">
+      @for (pokemon of [1, 2, 3, 4, 5, 6]; track $index) {
+        <div class="h-24 text-center">pokemon {{ pokemon }}</div>
+      }
+    </div>
+    <div class="flex-1 border p-4">
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+
+  <section class="flex border border-2 mt-16 rounded p-4 gap-4">
+    <div class="w-1/4 mx-4 m-4 border rounded">
+      <form></form>
+    </div>
+    <div class="flex-1 grid grid-cols-6 justify-evenly gap-4">
+      @for (pokemon of [1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1]; track $index) {
+        <div>
+          <div></div>
+          <div>
+            <span>Balbasaur</span>
+            <span>
+              <div>Grass</div>
+              <div>Poison</div>
+            </span>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+</main>

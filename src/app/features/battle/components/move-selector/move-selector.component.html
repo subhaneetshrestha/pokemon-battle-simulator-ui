@@ -1,1 +1,9 @@
-<p>move-selector works!</p>
+<div class="grid grid-cols-2 grid-rows-2 gap-4">
+  @for (move of [1, 2, 3, 4]; track $index) {
+    <div
+      class="p-4 text-black border rounded opacity-50 bg-gray-200 text-center cursor-pointer hover:bg-gray-300"
+    >
+      Move {{ move }}
+    </div>
+  }
+</div>

@@ -11,10 +11,11 @@ import {
 import { PokeBarComponent } from '@features/battle/components/poke-bar/poke-bar.component';
 import { CommonUtilsService } from '@shared/services/common-utils.service';
 import { BattleService } from '@features/battle/battle.service';
+import { MoveSelectorComponent } from '@features/battle/components/move-selector/move-selector.component';
 
 @Component({
   selector: 'pbs-battle',
-  imports: [PokeBarComponent],
+  imports: [PokeBarComponent, MoveSelectorComponent],
   providers: [
     CommonUtilsService,
     {
@@ -34,7 +35,7 @@ export class BattleComponent {
   userTeam$ = this.#battleService.fetchTeam();
   currentPokemon = signal<undefined | number>(undefined);
 
-  moveClick(moveId: number, pokemonId: number) {}
+  moveClick(moveId: number) {}
 
   updateDamage(pokemonId: number, damage: number) {
     this.#ngZone.runOutsideAngular(() => {});

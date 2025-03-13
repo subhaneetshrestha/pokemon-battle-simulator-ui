@@ -1,11 +1,8 @@
+import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { HpBarColorPipe } from '@core/pipes/hp-bar-color.pipe';
-
-import { ProgressBar } from 'primeng/progressbar';
-
 @Component({
   selector: 'pbs-poke-bar',
-  imports: [ProgressBar, HpBarColorPipe],
+  imports: [NgClass],
   templateUrl: './poke-bar.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
