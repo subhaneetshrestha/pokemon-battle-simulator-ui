@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'pbs-your-team',
@@ -6,4 +6,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './your-team.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class YourTeamComponent {}
+export class YourTeamComponent {
+  pokemon = input.required();
+}

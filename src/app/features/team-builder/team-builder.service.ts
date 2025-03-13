@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 
 type SearchBody = {
-  name: string | null;
+  name: string;
   type?: number[];
   abilities?: number[];
 };

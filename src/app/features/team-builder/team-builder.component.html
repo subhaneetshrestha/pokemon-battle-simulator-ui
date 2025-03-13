@@ -2,7 +2,7 @@
   <section class="flex gap-4">
     <div class="grid grid-cols-3 gap-4 w-2/5 p-4 border rounded">
       @for (pokemon of [1, 2, 3, 4, 5, 6]; track $index) {
-        <div class="h-24 text-center">pokemon {{ pokemon }}</div>
+        <pbs-your-team [pokemon]="pokemon" />
       }
     </div>
     <div class="flex-1 border p-4">
@@ -17,16 +17,7 @@
     </div>
     <div class="flex-1 grid grid-cols-6 justify-evenly gap-4">
       @for (pokemon of [1, 1, 1, 1, 1, 11, 1, 1, 1, 1, 1, 1]; track $index) {
-        <div>
-          <div></div>
-          <div>
-            <span>Balbasaur</span>
-            <span>
-              <div>Grass</div>
-              <div>Poison</div>
-            </span>
-          </div>
-        </div>
+        <pbs-pokedex />
       }
     </div>
   </section>

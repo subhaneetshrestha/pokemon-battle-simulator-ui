@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+
+import { PokemonSearchFormStore } from '@features/team-builder/store/filter-form-pokedex.store';
 
 @Component({
   selector: 'pbs-pokedex',
@@ -6,4 +8,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './pokedex.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PokedexComponent {}
+export class PokedexComponent {
+  readonly #filterPokedexStore = inject(PokemonSearchFormStore);
+}
